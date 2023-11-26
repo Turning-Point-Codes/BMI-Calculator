@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vw;
+  background: color rgb(182, 145, 127);
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  padding: 5px 20px;
+  text-align: center;
+  color: #7b1b1b;
+}
+
+.box {
+  min-width: 400px;
+  height: 500px;
+  background: blueviolet;
+  border-radius: 40px;
+  text-align: center;
+  position: relative;
+  padding: 40px 0;
+}
+
+.input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7d;
+  width: 60%;
+  text-align: center;
+  font-size: 28px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.calculate,
+.reset {
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  background-color: burlywood;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 10px 0;
+  width: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+}
+
+.calculate,
+.reset:hover {
+  background: #04f;
+}
+
+.result {
+  padding: 30px 20px;
+}
+
+.result #bmi {
+  font-weight: 800;
+  font-size: 20px;
+  color: #4ff971;
+  background-color: #eaea;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin-bottom: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
